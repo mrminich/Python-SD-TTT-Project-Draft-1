@@ -7,6 +7,7 @@ def display2DBoard(gameState):
       print()
       print("----------")
 
-    print(str(gameState[counter]) + " | ", end="")
+    if counter != 3 and counter != 6: 
+      print(str(gameState[counter]) + " | ", end="")
 
     counter += 1
